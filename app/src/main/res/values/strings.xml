@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CRUD_operations</string>
+    <string name="busque_seu_produto">busque seu produto</string>
+    <string name="delete">Delete</string>
+    <string name="buscar_por_nome">Buscar por nome</string>
+    <string name="digite_o_n_mero_de_telefone">Digite o número de telefone</string>
+    <string name="_55">+55</string>
+    <string name="voltar">voltar</string>
+    <string name="nome_de_usu_rio">Nome de usuário</string>
+    <string name="senha">Senha</string>
+    <string name="autenticar">Autenticar</string>
+</resources>

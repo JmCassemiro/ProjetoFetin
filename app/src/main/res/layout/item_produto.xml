@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/item_background"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:elevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/container_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/container_extra_info"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:id="@+id/container_nome_quantidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView_nome_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textSize="52sp"
+                android:textStyle="bold"
+                android:text="Nome do Produto"/>
+
+            <TextView
+                android:id="@+id/textView_quantidade_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_marca_valor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="40sp"
+            android:textColor="@android:color/darker_gray"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/container_extra_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintEnd_toStartOf="@id/btn_action_or_remove"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@id/container_info"
+        android:layout_marginStart="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView_preco"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" R$"
+                android:textSize="40sp"/>
+
+            <TextView
+                android:id="@+id/textView_preco_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textSize="40sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView_localizacao_valor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textSize="40sp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_action_or_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        android:textSize="40sp"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_margin="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"/>
+
+    <ImageView
+        android:id="@+id/img_gear_fill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gear_fill"
+        android:contentDescription="Delete Product"
+        android:visibility="gone"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toStartOf="@id/btn_action_or_remove"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

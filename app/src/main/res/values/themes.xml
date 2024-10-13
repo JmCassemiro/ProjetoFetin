@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CRUD_operations" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTranslucentNavigation">true</item>
+        <item name="android:windowTranslucentStatus">true</item>
+        <item name="android:fontFamily">@font/moderustic</item>
+    </style>
+
+
+    <style name="Theme.CRUD_operations" parent="Base.Theme.CRUD_operations" />
+</resources>

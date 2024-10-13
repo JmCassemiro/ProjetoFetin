@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".FormActivity">
+
+    <ImageView
+        android:id="@+id/icon_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon_voltar"
+        android:layout_gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintTop_toBottomOf="@id/icon_voltar"
+        app:layout_constraintBottom_toTopOf="@id/btn_polimorfismo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <EditText
+            android:id="@+id/editText_nome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editText_marca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Marca"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editText_preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço"
+            android:inputType="numberDecimal"
+            android:padding="16dp"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"/>
+
+        <EditText
+            android:id="@+id/editText_localizacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Localização"
+            android:inputType="text"
+            android:padding="16dp"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"/>
+
+        <Spinner
+            android:id="@+id/spinner_tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/tipo_dropdown_background"
+            android:textSize="50sp"
+            android:layout_marginBottom="15dp"
+            android:dropDownWidth="match_parent"
+            android:popupBackground="@color/white"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_polimorfismo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:textColor="@android:color/white"
+        android:background="@drawable/footer_background"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+        android:textSize="20sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        android:elevation="4dp"
+        android:layout_margin="15dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
