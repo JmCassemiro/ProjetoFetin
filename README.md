@@ -1,8 +1,8 @@
 # **Supermercado App**
 
-## **Logo do Aplicativo**
+Um aplicativo Android desenvolvido para ajudar os usuários a gerenciar suas listas de compras de supermercado de forma prática e eficiente. O aplicativo permite adicionar, visualizar, modificar e enviar produtos via **WhatsApp**, facilitando o processo de compra. 
 
-Um aplicativo Android desenvolvido para ajudar os usuários a gerenciar suas listas de compras de supermercado de forma prática e eficiente. O aplicativo permite adicionar, visualizar, modificar e enviar produtos via **WhatsApp**, facilitando o processo de compra.
+Este projeto foi apresentado na **FETIN (Feira Tecnológica do Inatel)**.
 
 ## **Funcionalidades**
 
@@ -15,7 +15,6 @@ Um aplicativo Android desenvolvido para ajudar os usuários a gerenciar suas lis
 
 ## **Tecnologias Utilizadas**
 
-```bash
 - **Android SDK**: Para o desenvolvimento do aplicativo Android.
 - **Java**: Linguagem de programação utilizada para a lógica do aplicativo.
 - **SQLite**: Banco de dados leve utilizado para armazenar as informações da lista de produtos.
