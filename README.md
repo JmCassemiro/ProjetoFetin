@@ -1,6 +1,9 @@
 # Supermercado App
 
-O **Supermercado App** é um aplicativo Android inovador, desenvolvido para ajudar os usuários a gerenciar suas listas de compras de supermercado de forma prática e eficiente. Este projeto foi apresentado na **FETIN** (Feira de Tecnologia da Inatel), destacando suas funcionalidades e benefícios para o dia a dia dos consumidores.
+O **Supermercado App** é um aplicativo Android inovador, desenvolvido para ajudar os usuários a gerenciar suas listas de compras de supermercado de forma prática e eficiente. 
+
+
+Este projeto foi apresentado na **FETIN** (Feira de Tecnologia da Inatel), destacando suas funcionalidades e benefícios para o dia a dia dos consumidores.
 
 ## Funcionalidades
 
